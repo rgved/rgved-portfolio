@@ -100,7 +100,7 @@ export default function App() {
           <img src={profilePic} alt="Rgved Kulkarni" />
           <h3>Rgved Kulkarni</h3>
           <p>B.Tech IT, NMIMS — Class of 2027</p>
-          <a href="/Rgved_Kulkarni_Resume.pdf">Download Résumé</a>
+          <a href="/Rgved_Kulkarni_Resume.pdf"></a>
         </div>
       </section>
 
@@ -255,3 +255,4 @@ function ProjectCard({ project }) {
     </div>
   );
 }
+
