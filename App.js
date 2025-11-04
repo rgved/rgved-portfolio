@@ -84,8 +84,8 @@ export default function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-text">
-          <h2>Designing practical AI systems that scale — research-driven, production-ready.</h2>
-          <p>I build ML models, web platforms, and research prototypes that solve real problems. Currently focused on safe web security, efficient systems, and intelligent educational tools.</p>
+          <h2>Designing practical AI Systems, Full Stack Web apps, Cyber Security Apps/Extensions that scale — research-driven, production-ready.</h2>
+          <p>I build ML models, Full-Stack Web apps, AI Powered Apps and research prototypes that solve real problems. Currently focused on safe web security, efficient systems, AI apps, AI tools.</p>
           <div className="hero-buttons">
             <a href="#projects" className="primary">See Work</a>
             <a href="mailto:rgvedk@gmail.com" className="secondary">Contact</a>
@@ -255,4 +255,5 @@ function ProjectCard({ project }) {
     </div>
   );
 }
+
 
