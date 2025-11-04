@@ -1,0 +1,269 @@
+/* ============================ */
+/* Modern Portfolio CSS - Refined */
+/* ============================ */
+
+/* 1. Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #fff8f3; /* slightly warmer off-white background */
+  color: #1E293B;
+  line-height: 1.7;
+  padding-inline: 6%;
+}
+
+/* Links */
+a {
+  color: #4ACAD5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7ED957;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-block: 40px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+header nav a {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 100px auto;
+  gap: 80px;
+}
+
+.hero-text {
+  flex: 1 1 600px;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  color: #475569;
+  margin-bottom: 35px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  margin-right: 18px;
+  padding: 12px 32px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .primary {
+  background: #4ACAD5;
+  color: #fff;
+}
+
+.hero-buttons .primary:hover {
+  background: #7ED957;
+  transform: translateY(-3px);
+}
+
+.hero-buttons .secondary {
+  border: 2px solid #4ACAD5;
+  color: #4ACAD5;
+}
+
+.hero-buttons .secondary:hover {
+  background: #4ACAD5;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Social Icons */
+.hero .social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #4ACAD5;
+}
+
+.social-icons a:hover {
+  color: #7ED957;
+}
+
+/* Profile Card */
+.profile-card {
+  flex: 0 0 280px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.profile-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.profile-card a {
+  font-weight: 500;
+  color: #4ACAD5;
+}
+
+.profile-card a:hover {
+  color: #7ED957;
+}
+
+/* Highlighted Achievement Card */
+.highlight {
+  position: relative;
+  border-left: 6px solid #D4AF37;
+  background: linear-gradient(135deg, #FFF8DC, #FFE082, #FFD700);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
+  padding: 25px;
+  border-radius: 18px;
+  transition: all 0.4s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+}
+
+/* Text inside highlight card */
+.highlight h5 {
+  color: #4b3f0a;
+}
+
+.highlight p {
+  color: #5a4d10;
+  line-height: 1.6;
+}
+
+/* Section Titles */
+section h3, section h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #1E293B;
+}
+
+section {
+  margin-block: 100px;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Standard Cards */
+.card, .experience-card {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 28px rgba(0,0,0,0.08);
+}
+
+.card h5, .experience-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card p, .experience-card p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 70px 20px;
+  color: #475569;
+  background: #F8FAFC;
+  margin-top: 80px;
+}
+
+footer h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+footer .social-icons a {
+  font-size: 1.5rem;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-text, .card, .experience-card, .profile-card, .highlight {
+  animation: fadeInUp 0.9s ease forwards;
+}
