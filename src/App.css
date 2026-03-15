@@ -1,89 +1,39 @@
-body, html, #root {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #fff;
-  color: #111;
-}
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem 0;
-  position: relative;
-  z-index: 2;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1a73e8;
-}
-
-header .header-info h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
-header .header-info p {
-  margin: 0.3rem 0;
-}
-
-h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  border-bottom: 2px solid #1a73e8;
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding-bottom: 4px;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-a {
-  color: #1a73e8;
-  font-weight: 500;
-}
-
-.animated-bg {
+.stars-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, #f0f4ff, #e0fff9, #fff0f7, #fffbe0);
-  z-index: 1;
-  animation: float 20s linear infinite;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+    radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+    radial-gradient(2px 2px at 50px 160px, #ddd, transparent),
+    radial-gradient(2px 2px at 90px 40px, #fff, transparent),
+    radial-gradient(2px 2px at 130px 80px, #fff, transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: starAnim 100s linear infinite;
   opacity: 0.3;
 }
 
-@keyframes float {
-  0% { transform: translate(0,0) rotate(0deg);}
-  50% { transform: translate(-20%, 10%) rotate(45deg);}
-  100% { transform: translate(0,0) rotate(0deg);}
+@keyframes starAnim {
+  from { transform: translateY(0); }
+  to { transform: translateY(-200px); }
+}
+
+.gradient-blob {
+  position: absolute;
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.15;
+  border-radius: 50%;
+  animation: floatBlobs 20s infinite alternate ease-in-out;
+}
+
+@keyframes floatBlobs {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(10%, 10%) scale(1.1); }
+  100% { transform: translate(-10%, 5%) scale(0.9); }
 }
