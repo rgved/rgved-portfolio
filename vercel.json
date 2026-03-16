@@ -3,10 +3,20 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
+
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
+
     }
   ]
 }
